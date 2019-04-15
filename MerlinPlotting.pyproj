@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>162739c9-42b2-4268-9053-a0af2614b46c</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>Main.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>MerlinPlotting</Name>
+    <RootNamespace>MerlinPlotting</RootNamespace>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <CommandLineArguments>2/28/2019 PM --t1 2/27/2019 --pdfoutput "K:/Operations/Oberon/Merlin/UAT/output/20190227/" --configpath "K:/Operations/Oberon/Merlin/UAT/config/Curve Plotting Configuration.csv" --pngoutput "K:/Operations/Oberon/Merlin/UAT/output/20190228/" --tpath "K:/Operations/Oberon/Fincad Curves/Output/UAT/022819/" --t1path "K:/Operations/Oberon/Fincad Curves/Output/UAT/022719/"</CommandLineArguments>
+    <EnableNativeCodeDebugging>False</EnableNativeCodeDebugging>
+    <InterpreterId>{a0c4312f-cc12-4899-b7bf-cd054f9e4c33}</InterpreterId>
+    <InterpreterVersion>2.7</InterpreterVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <PtvsTargetsFile>$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets</PtvsTargetsFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="ConfigurationTypes\CommandLineArgs.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ConfigurationTypes\ConfigurationContainer.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ConfigurationTypes\FilepathsFile.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ConfigurationTypes\MerlinGUIWorkbook.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Exceptions\ExceptionContainerType.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Exceptions\Fatal.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Exceptions\MerlinPlottingExcept.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DirectoryTypes\PathType.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Misc\PDFImageDrawer.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Misc\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PlottingTypes\CustomAxisItems.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DirectoryTypes\DirectoryType.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ConfigurationTypes\EmailConfigurationFile.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DirectoryTypes\FileContainer.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DirectoryTypes\FileRow.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DirectoryTypes\FilesAndFoldersContainer.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DirectoryTypes\FileType.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DirectoryTypes\FolderContainer.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PlottingTypes\FixedImageExporter.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PlottingTypes\ForwardRatePlot.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Misc\FunctionTimer.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DirectoryTypes\Grid.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DirectoryTypes\DirectoryContainerBase.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Exceptions\LogFile.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PlottingTypes\MerlinPlotter.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Exceptions\NonFatal.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DirectoryTypes\PathSubscriber.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DirectoryTypes\Observer.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PlottingTypes\Plot.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ConfigurationTypes\PlottingConfigFile.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Exceptions\ExceptionAggregator.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ConfigurationTypes\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DirectoryTypes\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Exceptions\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PlottingTypes\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Misc\Utilities.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Main.py" />
+    <Compile Include="__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Exceptions\" />
+    <Folder Include="DirectoryTypes\" />
+    <Folder Include="ConfigurationTypes\" />
+    <Folder Include="Misc\" />
+    <Folder Include="PlottingTypes\" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="{a0c4312f-cc12-4899-b7bf-cd054f9e4c33}\2.7" />
+  </ItemGroup>
+  <Import Condition="Exists($(PtvsTargetsFile))" Project="$(PtvsTargetsFile)" />
+  <Import Condition="!Exists($(PtvsTargetsFile))" Project="$(MSBuildToolsPath)\Microsoft.Common.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>

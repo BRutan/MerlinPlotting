@@ -1,0 +1,3 @@
+FincadCurvesLocationSignature,//isis/common/Operations/Oberon/Fincad Curves/Output/UAT/{MM}{DD}{YY}/{CurveName}.txt
+PDFOutputFileSignature,K:/Operations/Oberon/Ben R Temp/Merlin Plotting Tool Update/UAT/{YYYY}{MM}{DD}/{MM}{DD}{YY} {RunTime} Merlin Graphs.pdf
+PNGOutputLocationSignature,K:/Operations/Oberon/Ben R Temp/Merlin Plotting Tool Update/UAT/{YYYY}{MM}{DD}/{YYYY}-{MM}-{DD} MerlinCurveGraph-{PlotName}-{RunTime}.png
